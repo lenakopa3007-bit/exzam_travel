@@ -1,0 +1,37 @@
+// ===== FONTS =====
+$main-font-family:   'Josefin Sans', sans-serif;
+$title-font-family:  'Aleo', serif;
+$main-font-size:     16px;
+ 
+// ===== COLORS =====
+$main-font-color:    #ffffff;
+$dark-font-color:    #16133d;
+$text-muted:         rgba(255,255,255,0.60);
+$text-light:         rgba(255,255,255,0.75);
+ 
+$main-background:        #ffffff;
+$secondary-background:   #0e0c24;
+$header-background:      #5373FD;
+$why-background:         #ffffff;
+$features-background:    #f8f9ff;
+$banner-overlay:         rgba(22,19,61,0.82);
+$card-background:        rgba(255,255,255,0.05);
+$accent-color:           #5373FD;
+$accent-hover:           #3a57e0;
+$white-bg:               #f8f9fc;
+$why-steps-background: #333333;
+
+$danger-color:           #c53030;// змінна для червоного hover (кнопка + іконки)
+ 
+$border-color:           rgba(255,255,255,0.12);
+$border-light:           #e8e8f0;
+ 
+// ===== LAYOUT =====
+$container-width: 1170px;
+$main-border-radius: 8px;
+ 
+// ===== BREAKPOINTS =====
+$bp-xl:   1200px;
+$bp-lg:    992px;
+$bp-md:    768px;
+$bp-sm:    576px;

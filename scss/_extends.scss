@@ -1,0 +1,45 @@
+
+@use 'vars' as v;
+
+%sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px; padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+ 
+%section-title {
+    font-family: v.$title-font-family;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+ 
+%section-text {
+    font-family: v.$main-font-family;
+    font-size: 14px;
+    font-weight: 300;
+    color: v.$text-muted;
+    line-height: 1.8;
+}
+ 
+%img-fill {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+%tag-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: v.$accent-color;
+}
