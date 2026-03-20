@@ -21,7 +21,7 @@ $accent-hover:           #3a57e0;
 $white-bg:               #f8f9fc;
 $why-steps-background: #333333;
 
-$danger-color:           #c53030;// змінна для червоного hover (кнопка + іконки)
+$danger-color:           #99929555;// змінна для червоного hover (кнопка + іконки)
  
 $border-color:           rgba(255,255,255,0.12);
 $border-light:           #e8e8f0;
@@ -31,7 +31,7 @@ $container-width: 1170px;
 $main-border-radius: 8px;
  
 // ===== BREAKPOINTS =====
-$bp-xl:   1200px;
-$bp-lg:    992px;
-$bp-md:    768px;
-$bp-sm:    576px;
+$bp-xl:   1200px; //desctop
+$bp-lg:    992px; //desctop_2
+$bp-md:    768px; //tablet
+$bp-sm:    576px; //mobile

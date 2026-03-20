@@ -13,13 +13,13 @@
 <body>
 
     <input type="checkbox" id="nav-toggle" class="nav__toggle">
-    <div class="mobile-menu" role="dialog" aria-label="Navigation menu" aria-modal="true">
+    <dialog class="mobile-menu">
         <div class="mobile-menu__close">
             <label for="nav-toggle" style="cursor:pointer;">&#10005;</label>
         </div>
 
         <nav class="mobile-menu__nav" aria-label="Mobile navigation">
-            <ul class="mobile-menu__list" role="list">
+            <ul class="mobile-menu__list">
                 <li><label for="nav-toggle"><a href="#about"   
                     class="mobile-menu__link">Who We Are</a></label></li>
                 <li><label for="nav-toggle"><a href="#works"   
@@ -30,7 +30,7 @@
                     class="mobile-menu__link">Contact Us</a></label></li>
             </ul>
         </nav>
-    </div>
+    </dialog>
 
     <section class="hero" id="hero" aria-label="Hero section">
             <img src="./assets/img/header_desk.png" alt="Hero background" class="hero__bg">
@@ -43,26 +43,10 @@
                         Search travel destination</label>
                     <input type="search" id="search-destination" class="search__input"
                     placeholder="Search Your Travel Destination" required minlength="2"
-                    maxlength="100" autocomplete="off" aria-label="Search destination"
-                    aria-required="true">
+                    maxlength="100" autocomplete="off" aria-label="Search destination">
                     <button type="submit" class="search__btn" aria-label="Search">
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1017 
-                            11.0715L16.8788 14.6313C17.0475 14.8079 17.0391 15.0783 
-                            16.8599 15.2454L16.1989 15.8684C16.1102 15.9526 15.9896 
-                            16 15.8637 16C15.7378 16 15.6171 15.9526 15.5285 15.8684L11.7514 
-                            12.3085C11.6469 12.21 11.5521 12.1028 11.4681 11.9881L10.7599 
-                            11.0982C9.58814 11.9801 8.13301 12.4602 6.63347 12.4598C3.54346 
-                            12.4699 0.858359 10.461 0.167823 7.62231C-0.522714 4.78365 
-                            0.965611 1.87288 3.75166 0.613257C6.53772 -0.646363 9.87794 
-                            0.0813446 11.7948 2.36555C13.7117 4.64977 13.6937 7.88086 
-                            11.7514 10.1459L12.6957 10.76C12.8431 10.849 12.9794 10.9535 
-                            13.1017 11.0715ZM1.9126 6.23017C1.9126 8.68773 4.02641 10.68 
-                            6.63393 10.68C7.88611 10.68 9.087 10.2112 9.97242 9.37666C10.8578 
-                            8.54216 11.3553 7.41034 11.3553 6.23017C11.3553 3.77262 9.24145 
-                            1.78037 6.63393 1.78037C4.02641 1.78037 1.9126 3.77262 1.9126 
-                            6.23017Z" fill="white"/>
-                        </svg>                
+                        <img src="./assets/img/icons/icon_search.svg" alt="Search">
+                        <span class="search__btn-text">SEARCH</span>              
                     </button>
                 </form>     
             </div>
@@ -96,7 +80,7 @@
                                 <span class="burger__line"></span>
                             </label>                        
                                                     
-                            <ul class="menu" role="list">
+                            <ul class="menu">
                                 <li class="menu__item"><a href="#hero" class="menu__link">Who We Are</a></li>
                                 <li class="menu__item"><a href="#works" class="menu__link">What We Do</a></li>
                                 <li class="menu__item"><a href="#travel" class="menu__link">Travel With Us</a></li>                        
@@ -272,26 +256,26 @@
                        
         <section class="tourist" id="travel" aria-labelledby="tourist-title">
             <div class="container">
-
-                <div class="tourist__images">
-                    <div class="tourist__img">
-                        <img src="assets/img/image_3.png" alt="Tourist Sam Sumon">
-                    </div>                    
-                </div>  
-
-                <div class="section__tourist">
-                    <h3 class="tourist__name">Sam Sumon</h3>
-                    <p class="tourist__text">But I must explain to you how all 
-                        this mistaken idea of account to denouncinpleasure 
-                        and praising pain  But I must explain to you how all 
-                        this mistaken idea of account to nai denouncing pleasure 
-                        and praising pain was account  born and I account will 
-                        give you a complete account of the system was account  
-                        born and I account will give you a nai the complete 
-                        account of the system</p> 
-                    <h2 class="section__title" id="tourist-title">What Our Tourists Say</h2>
-                </div>   
+                <div class="flex-container">
+                    <div class="tourist__images">
+                        <div class="tourist__img">
+                            <img src="assets/img/image_3.png" alt="Tourist Sam Sumon">
+                        </div>                    
+                    </div>  
                 
+                    <div class="section__tourist">
+                        <h3 class="tourist__name">SAM SUMON</h3>
+                        <p class="tourist__text"><span class="tourist__quote">&ldquo;</span> But I must 
+                            explain to you how all this mistaken idea of account 
+                            to denouncinpleasure and praising pain  But I must 
+                            explain to you how all this mistaken idea of account 
+                            to nai denouncing pleasure and praising pain was account  
+                            born and I account will give you a complete account 
+                            of the system was account born and I account will give 
+                            you a nai the complete account of the system</p>                         
+                    </div>   
+                </div>
+                <h2 class="section__title" id="tourist-title">What Our Tourists Say</h2>
             </div>
             
         </section>
@@ -307,7 +291,7 @@
                     <a href="#" class="logo">BHROMAON</a>
                     <p>Safe Travel Anywhere</p>
 
-                    <div class="social" aria-label="Social media links">
+                    <nav class="social" aria-label="Social media links">
                         <a href="#" class="social__link" aria-label="Facebook">
                             <svg width="20" height="32" viewBox="0 0 20 32" fill="none">
                                 <path d="M17.4463 18L18.335 12.2087H12.7782V8.45063C12.7782 
@@ -402,7 +386,7 @@
                             </svg>
                         </a>
 
-                    </div>
+                    </nav>
                 </div>                
 
             </div>            
