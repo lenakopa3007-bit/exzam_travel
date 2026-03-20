@@ -2,6 +2,12 @@
 @use 'mixins' as m;
  
 // ===== ПРИХОВАНИЙ ЧЕКБОКС (гамбургер-тригер) =====
+.nav { flex-grow: 1;     
+    display: flex;
+    justify-content: flex-end;  // ← бургер і меню притискаються вправо
+    align-items: center;
+}
+
 .nav__toggle {
     position: absolute;
     opacity: 0;
@@ -10,17 +16,17 @@
     pointer-events: none;
 }
  
-.nav { flex-grow: 1; }
+
  
 // ===== ДЕСКТОПНЕ МЕНЮ =====
 .menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: clamp(16px, 2.5vw, 36px);
+    gap: 2.8vw;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0 30px;
+    
  
     &__link {
         font-family: v.$main-font-family;
@@ -102,12 +108,16 @@
 .mobile-menu {
     position: fixed;
     inset: 0;
+    width: 100vw;
     background: v.$accent-color;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: none;
+    padding: 0;
+    margin: 0;
     clip-path: circle(0% at 95% 5%);
     transition: clip-path 0.55s cubic-bezier(0.77, 0, 0.175, 1);
     pointer-events: none;
@@ -135,6 +145,8 @@
         transform: translateY(20px);
         transition: opacity 0.35s ease, transform 0.35s ease, color 0.25s;
         position: relative;
+
+        &:hover { color: #fff; }
  
         &::after {
             content: '';
